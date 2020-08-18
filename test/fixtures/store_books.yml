@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  edition: MyString
+  price: 9.99
+  is_available: false
+  store: one
+  book: one
+
+two:
+  edition: MyString
+  price: 9.99
+  is_available: false
+  store: two
+  book: two

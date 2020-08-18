@@ -1,0 +1,32 @@
+<%= form_with(model: social_link, local: true) do |form| %>
+  <% if social_link.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(social_link.errors.count, "error") %> prohibited this social_link from being saved:</h2>
+
+      <ul>
+        <% social_link.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :site %>
+    <%= form.text_field :site %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store_id %>
+    <%= form.text_field :store_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

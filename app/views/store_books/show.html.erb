@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Edition:</strong>
+  <%= @store_book.edition %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @store_book.price %>
+</p>
+
+<p>
+  <strong>Is available:</strong>
+  <%= @store_book.is_available %>
+</p>
+
+<p>
+  <strong>Store:</strong>
+  <%= @store_book.store_id %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @store_book.book_id %>
+</p>
+
+<%= link_to 'Edit', edit_store_book_path(@store_book) %> |
+<%= link_to 'Back', store_books_path %>
