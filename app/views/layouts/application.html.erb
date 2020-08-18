@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BookStores</title>
+    <title>BookStore</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= favicon_link_tag 'icon/book.svg' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <header class="">
+      <%= render 'layouts/header' %>
+      <%= render 'layouts/messages' %>
+    </header>
+
+    <div class="yield container">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <%= render 'layouts/footer' %>
+    </footer>
+
+    <%= yield :javascript_includes %>
   </body>
 </html>
