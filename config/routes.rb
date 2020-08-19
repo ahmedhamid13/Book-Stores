@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   devise_for :owners
   devise_for :users
   root to: 'home#index'
+  get 'api', to: 'end_points#index', as: 'api'
   get 'home/index', to: 'home#index', as: 'welcome_index'
 end
