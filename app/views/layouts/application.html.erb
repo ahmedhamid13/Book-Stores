@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BookStore</title>
+    <title>Booki Stores</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -21,9 +21,11 @@
     </div>
 
     <footer>
+      <%= render 'layouts/intouch' %>
       <%= render 'layouts/footer' %>
     </footer>
 
     <%= yield :javascript_includes %>
+    <%= javascript_pack_tag 'intouch', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-static-top navbar-expand-md bg-dark p-1 mb-2">
+<nav class="navbar navbar-dark navbar-static-top navbar-expand-md bg-green p-1">
     <div class="container-fluid">
         <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -7,13 +7,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav mr-auto">
                 <li class='nav-item p-1 rounded'>
-                    <%= link_to  "Home", welcome_index_path, class: 'nav-link text-white btn-outline-primary rounded btn-md' %>
+                    <%= link_to  "Home", welcome_index_path, class: 'nav-link bold text-white btn-outline-dark rounded' %>
+                </li>
+                <li class='nav-item p-1 rounded'>
+                    <%= link_to  "Book", books_path, class: 'nav-link bold text-white btn-outline-dark rounded' %>
+                </li>  
+                <li class='nav-item p-1 rounded'>
+                    <%= link_to  "Store", stores_path, class: 'nav-link bold text-white btn-outline-dark rounded' %>
                 </li>  
             </ul>
             <ul class="nav navbar-nav ml-auto">
-                <li class='nav-item p-1 rounded'>
-                    <%= link_to  "Home", welcome_index_path, class: 'nav-link text-white btn-outline-primary rounded btn-md' %>
-                </li>  
+
             </ul>
         </div>
     </div>
